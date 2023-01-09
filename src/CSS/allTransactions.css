@@ -1,0 +1,47 @@
+.mainTitle {
+    margin: 10px;
+}
+
+#showAllTransactions {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.showTransaction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    background-color: var(--TEST-N8);
+    border: 5px solid var(--TEST-N6);
+    border: 5px solid var(--MY-orange-light);
+    border-radius: 25px;
+    padding: 5px;
+    gap: 4px;
+}
+
+.showTransaction-products {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+
+    border-radius: 20px;
+    border: 3px var(--TEST-N2) solid;
+
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.showTransaction-products-title {
+    border-bottom: 2px solid var(--TEST-N4);
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+.showTransaction-products-item {
+    display: grid;
+    grid-template-areas: "quantity name subtotal";
+    grid-template-columns: 20% 50% 30%;
+}

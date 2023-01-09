@@ -1,0 +1,15 @@
+{
+  "name": "app-stockprecio",
+  "version": "1.0.0",
+  "description": "Aplicacion para control de stock y transacciones de locales",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "author": "Bnx07v",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^22.0.0"
+  }
+}

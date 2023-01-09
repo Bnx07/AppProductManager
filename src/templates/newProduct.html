@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Añadir producto</title>
+    <link rel="stylesheet" href="../CSS/root.css">
+    <link rel="stylesheet" href="../CSS/newProduct.css">
+</head>
+<body>
+    <button onclick='window.location.href="./newProduct.html"'>Recargar</button>
+    <header>
+        <button class="header-link" onclick='window.location.href="./src/templates/editProduct.html"'>Modificar producto</button>
+        <button class="return" onclick='window.location.href="../../index.html"'>&lt Volver</a>
+        <button class="header-link" onclick='window.location.href="./src/templates/allTransactions.html"'>Lista de compras</button>
+        <button class="header-link" onclick='window.location.href="./src/templates/newTransaction.html"'>Realizar compra</button>
+    </header>
+    <main>
+        <form action="" method="post" id="newProductForm">
+            <input type="text" placeholder="Nombre del producto" id="productName">
+            <input type="text" placeholder="Categoría del producto" id="product">
+            <input type="number" name="Precio del producto" id="productPrice">
+            <input type="number" name="Stock" id="productStock">
+        </form>
+    </main>
+</body>
+</html>
