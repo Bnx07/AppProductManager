@@ -18,10 +18,22 @@
     </header>
     <main>
         <form action="" method="post" id="newProductForm">
-            <input type="text" placeholder="Nombre del producto" id="productName">
-            <input type="text" placeholder="Categoría del producto" id="product">
-            <input type="number" name="Precio del producto" id="productPrice">
-            <input type="number" name="Stock" id="productStock">
+            <div class="group">
+                <p class="formIndicator">Nombre:</p>
+                <input type="text" placeholder="Nombre del producto" id="productName">
+            </div>
+            <div class="group">
+                <p class="formIndicator">Categoría: </p>
+                <input type="text" placeholder="Categoría del producto" id="product">
+            </div>
+            <div class="group">
+                <p class="formIndicator">Precio: </p>
+                <input type="number" placeholder="Precio del producto" id="productPrice">
+            </div>
+            <div class="group">
+                <p class="formIndicator">Stock: </p>
+                <input type="number" placeholder="Stock" id="productStock">
+            </div>
         </form>
     </main>
 </body>

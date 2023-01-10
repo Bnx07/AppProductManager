@@ -2,7 +2,7 @@
     font-family: 'comfortaa', sans-serif;
     margin: 0;
     padding: 0;
-    color: black;
+    color: var(--MY-brown-darker);
     text-decoration: none;
 }
 
@@ -10,6 +10,7 @@
     --MY-brown-lighter: #D4BEB0;
     --MY-brown-light: #DDB194;
     --MY-brown-dark: #86542b;
+    --MY-brown-darker: #654528;
 
     --MY-yellow: #F7BE6A;
 
