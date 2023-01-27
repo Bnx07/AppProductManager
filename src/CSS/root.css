@@ -14,10 +14,15 @@
 
     --MY-yellow: #F7BE6A;
 
+    --MY-orange-lightest: #FFF8E4;
     --MY-orange-lighter: #F1C480;
     --MY-orange-light: #fdb851;
     --MY-orange: #C67C3F;
     --MY-orange-dark: #b1611f;
+
+    --MY-cream-light: #F7CEA1;
+
+    --MY-green-light: #EBE6BC;
 
     --TEST-N1: #F7EBBA;
     --TEST-N2: #D4CC9F;
@@ -57,7 +62,7 @@ header {
     z-index: 5;
 
     /* background-color: var(--MY-orange-lighter); */
-    background-color: var(--TEST-N6);
+    background-color: var(--MY-cream-light);
     justify-content: space-around;
     align-items: center;
 

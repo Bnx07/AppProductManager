@@ -9,32 +9,52 @@
     <link rel="stylesheet" href="../CSS/newProduct.css">
 </head>
 <body>
-    <button onclick='window.location.href="./newProduct.html"'>Recargar</button>
     <header>
-        <button class="header-link" onclick='window.location.href="./src/templates/editProduct.html"'>Modificar producto</button>
+        <button class="header-link" onclick='window.location.href="./editProduct.html"'>Modificar producto</button>
         <button class="return" onclick='window.location.href="../../index.html"'>&lt Volver</a>
-        <button class="header-link" onclick='window.location.href="./src/templates/allTransactions.html"'>Lista de compras</button>
-        <button class="header-link" onclick='window.location.href="./src/templates/newTransaction.html"'>Realizar compra</button>
+        <button class="header-link" onclick='window.location.href="./allTransactions.html"'>Lista de compras</button>
+        <button class="header-link" onclick='window.location.href="./newTransaction.html"'>Realizar compra</button>
     </header>
     <main>
-        <form action="" method="post" id="newProductForm">
-            <div class="group">
-                <p class="formIndicator">Nombre:</p>
-                <input type="text" placeholder="Nombre del producto" id="productName">
+        <h1 class="title">Nuevo producto</h1>
+        <section id="form">
+            <div class="image">
+                <p class="imageText">Arrastra una imagen del producto</p>
             </div>
-            <div class="group">
-                <p class="formIndicator">Categoría: </p>
-                <input type="text" placeholder="Categoría del producto" id="product">
+            <div class="block">
+                <h3>Nombre del producto</h3>
+                <input type="text" class="formInput" placeholder="Nombre del producto" id="productName">
             </div>
-            <div class="group">
-                <p class="formIndicator">Precio: </p>
-                <input type="number" placeholder="Precio del producto" id="productPrice">
+            <div class="block">
+                <h3>Propiedades</h3>
+                <div class="group">
+                    <p class="formIndicator">Nombre:</p>
+                    <input type="text" class="formInput" placeholder="Nombre del producto" id="productName">
+                </div>
+                <div class="group">
+                    <p class="formIndicator">Categoría: </p>
+                    <input type="text" class="formInput" placeholder="Categoría del producto" id="product">
+                </div>
+                <div class="group">
+                    <p class="formIndicator">Precio: </p>
+                    <input type="number" class="formInput" placeholder="Precio del producto" id="productPrice">
+                </div>
+                <div class="group">
+                    <p class="formIndicator">Stock: </p>
+                    <input type="number" class="formInput" placeholder="Stock" id="productStock">
+                </div>
             </div>
-            <div class="group">
-                <p class="formIndicator">Stock: </p>
-                <input type="number" placeholder="Stock" id="productStock">
+            <div class="block">
+                <h3>Etiquetas</h3>
+                <div id="tags">
+                    <input type="text" class="tagInput" placeholder="Etiqueta">
+                </div>
+                <button onclick="addTag()" class="subbutton">Añadir etiqueta</button>
             </div>
-        </form>
+            <button onclick="saveProduct()" class="button">Agregar producto</button>
+        </section>
     </main>
+    <script src="../js/frontEnd.js"></script>
+    <script src="../js/newProduct.js"></script>
 </body>
 </html>

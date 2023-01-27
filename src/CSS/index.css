@@ -89,6 +89,8 @@
 
 .product-title {
     grid-area: nombre;
+    max-height: 61.3px;
+    overflow: hidden;
 }
 
 .product-stock {
