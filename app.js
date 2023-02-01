@@ -1,7 +1,12 @@
 const { app, BrowserWindow } = require('electron');
+// import app from 'electron';
 
 const createWindow = () => {
     const win = new BrowserWindow({
+        webPreferences: {
+            nodeIntegration: true,
+            contextIsolation: false,
+        },
         width: 500,
         height: 1000,
         icon: './src/icon.jpeg'

@@ -1,0 +1,10 @@
+General:            Hacer que modificar producto y realizar transaccion sean pestañas nuevas
+General:            Dar opcion de modificar producto desde index
+
+Home:               Dejar funcional motor de busqueda
+Modificar producto: Todo
+Añadir producto:    Validación de datos y borrado de tags cuando se añade 1
+Transacciones:      Cargar las transacciones
+Realizar compra:    Arreglar que se borra todo cada que se añade algo (Tratar de implementar algo como lo de la Cami de Session Storage)
+
+https://soka.gitlab.io/electron/basico/dos-ventanas/dos-ventanas/
