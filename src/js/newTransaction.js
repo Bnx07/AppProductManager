@@ -20,5 +20,5 @@ const addTransaction = () => {
             }
         }
     }
-    console.log(products)
+    console.log(products);
 }
