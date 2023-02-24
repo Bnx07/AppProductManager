@@ -62,3 +62,11 @@ main {
 .datoAnt, .tagAnt {
     width: 200px
 }
+
+@media (min-width: 768px) and (max-width: 1365px) {
+    
+}
+
+@media (min-width: 1366px) and (max-width: 1920px) {
+    
+}

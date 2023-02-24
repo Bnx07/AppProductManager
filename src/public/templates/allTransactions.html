@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimas transacciones</title>
+    <link rel="stylesheet" href="../CSS/root.css">
+    <link rel="stylesheet" href="../CSS/allTransactions.css">
+</head>
+<body>
+    <header>
+        <button class="header-link" onclick='window.location.href="./editProduct.html"'>Modificar producto</button>
+        <button class="header-link" onclick='window.location.href="./newProduct.html"'>Añadir producto</button>
+        <button class="return" onclick='window.location.href="../../../index.html"'>&lt Volver</a>
+        <button class="header-link" onclick='window.location.href="./newTransaction.html"'>Realizar compra</button>
+    </header>
+    <main>
+        <h1 class="mainTitle">Últimas transacciones</h1>
+        <section id="showAllTransactions">
+            <div class="showTransaction">
+                <h1 class="showTransaction-title">Compra numero: 1203</h1>
+                <h3 class="showTransaction-method">Método de pago: Efectivo</h3>
+                <h3 class="showTransaction-total">Monto total: $1300.50</h3>
+                <div class="showTransaction-products">
+                    <h3 class="showTransaction-products-title">Lista de productos</h3>
+                    <div class="showTransaction-products-item">
+                        <p class="item-quantity">3</p>
+                        <p class="item-name">Espejo</p>
+                        <p class="item-subtotal">$450</p>
+                    </div>
+                    <div class="showTransaction-products-item">
+                        <p class="item-quantity">1 (-10%)</p>
+                        <p class="item-name">Escritorio</p>
+                        <p class="item-subtotal">$850.50</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

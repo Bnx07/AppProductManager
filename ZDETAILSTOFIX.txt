@@ -1,10 +1,12 @@
-General:            Hacer que modificar producto y realizar transaccion sean pestañas nuevas
-General:            Dar opcion de modificar producto desde index
+General:        Hacer que modificar producto y realizar transaccion sean pestañas nuevas
+General:        Dar opcion de modificar producto desde index y abre el producto en ventana nueva de editProduct. A lo mejor hacer cuadrado por encima de todo y no nueva ventana
 
 Home:               Dejar funcional motor de busqueda
-Modificar producto: Todo
+Modificar producto: Todo, hacer sobre home
 Añadir producto:    Validación de datos y borrado de tags cuando se añade 1
 Transacciones:      Cargar las transacciones
 Realizar compra:    Arreglar que se borra todo cada que se añade algo (Tratar de implementar algo como lo de la Cami de Session Storage)
 
 https://soka.gitlab.io/electron/basico/dos-ventanas/dos-ventanas/
+
+Line 2 details: onlick="funcion(${idDelProducto})" al hacer click await readFile y abre formulario con datos cargados, al guardar se abre de vuelta index.html

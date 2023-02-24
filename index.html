@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menú principal</title>
-    <link rel="stylesheet" href="./src/CSS/root.css">
-    <link rel="stylesheet" href="./src/CSS/index.css">
+    <link rel="stylesheet" href="./src/public/CSS/root.css">
+    <link rel="stylesheet" href="./src/public/CSS/index.css">
 </head>
 <body>
     <header>
-        <button class="header-link" onclick='window.location.href="./src/templates/editProduct.html"'>Modificar producto</button>
-        <button class="header-link" onclick='window.location.href="./src/templates/newProduct.html"'>Añadir producto</button>
-        <button class="header-link" onclick='window.location.href="./src/templates/allTransactions.html"'>Lista de compras</button>
-        <button class="header-link" onclick='window.location.href="./src/templates/newTransaction.html"'>Realizar compra</button>
+        <button class="header-link" onclick='window.location.href="./src/public/templates/editProduct.html"'>Modificar producto</button>
+        <button class="header-link" onclick='window.location.href="./src/public/templates/newProduct.html"'>Añadir producto</button>
+        <button class="header-link" onclick='window.location.href="./src/public/templates/allTransactions.html"'>Lista de compras</button>
+        <button class="header-link" onclick='window.location.href="./src/public/templates/newTransaction.html"'>Realizar compra</button>
     </header>
     <main>
         <nav id="searchProduct">                                                        <!--QUIERO QUE SE ADHIERA AL HEADER-->
@@ -34,70 +34,79 @@
         <nav id="randomProducts">
             <!-- <h6>Products.random(6)</h6> -->
             <div class="product">
+                <div class="absolute"><img src="./src/public/images/editar.png" onclick="editProduct(2)"></div>
                 <h3 class="product-title">Espejo titulo largo de producto xdxds y a ver la tercera linea</h3>
                 <p class="product-stock">Stock: <span>26</span> unidades</p>
                 <p class="product-price">Precio: $<span>300.50</span></p>
-                <p class="product-image">Se supone que soy una imagen</p>
+                <p class="product-image"><img src="./src/public/images/product.jpg" alt="No se encuentra la imagen"></img></p>
             </div>
             <div class="product">
+                <div class="absolute">Modificar (Lapiz)</div>
                 <h3 class="product-title">Espejo titulo largo de producto xdxds y a ver la tercera linea yei y 4ta</h3>
                 <p class="product-stock">Stock: <span>26</span> unidades</p>
                 <p class="product-price">Precio: $<span>300.50</span></p>
-                <p class="product-image">Se supone que soy una imagen</p>
+                <p class="product-image"><img src="./src/public/images/product.jpg" alt="No se encuentra la imagen"></img></p>
             </div>
             <div class="product">
+                <div class="absolute">Modificar (Lapiz)</div>
                 <h3 class="product-title">Espejo titulo largo de producto xdxds y a ver la tercera linea yei y 4ta + 5ta porque pinto</h3>
                 <p class="product-stock">Stock: <span>26</span> unidades</p>
                 <p class="product-price">Precio: $<span>300.50</span></p>
-                <p class="product-image">Se supone que soy una imagen</p>
+                <p class="product-image"><img src="./src/public/images/product.jpg" alt="No se encuentra la imagen"></img></p>
             </div>
             <div class="product">
+                <div class="absolute">Modificar (Lapiz)</div>
                 <h3 class="product-title">Espejo 20x36cm</h3>
                 <p class="product-stock">Stock: <span>26</span> unidades</p>
                 <p class="product-price">Precio: $<span>300.50</span></p>
-                <p class="product-image">Se supone que soy una imagen</p>
+                <p class="product-image"><img src="./src/public/images/product.jpg" alt="No se encuentra la imagen"></img></p>
             </div>
             <div class="product">
+                <div class="absolute">Modificar (Lapiz)</div>
                 <h3 class="product-title">Espejo 20x36cm</h3>
                 <p class="product-stock">Stock: <span>26</span> unidades</p>
                 <p class="product-price">Precio: $<span>300.50</span></p>
-                <p class="product-image">Se supone que soy una imagen</p>
+                <p class="product-image"><img src="./src/public/images/product.jpg" alt="No se encuentra la imagen"></img></p>
             </div>
             <div class="product">
+                <div class="absolute">Modificar (Lapiz)</div>
                 <h3 class="product-title">Espejo 20x36cm</h3>
                 <p class="product-stock">Stock: <span>26</span> unidades</p>
                 <p class="product-price">Precio: $<span>300.50</span></p>
-                <p class="product-image">Se supone que soy una imagen</p>
+                <p class="product-image"><img src="./src/public/images/product.jpg" alt="No se encuentra la imagen"></img></p>
             </div>
             <div class="product">
+                <div class="absolute">Modificar (Lapiz)</div>
                 <h3 class="product-title">Espejo 20x36cm</h3>
                 <p class="product-stock">Stock: <span>26</span> unidades</p>
                 <p class="product-price">Precio: $<span>300.50</span></p>
-                <p class="product-image">Se supone que soy una imagen</p>
+                <p class="product-image"><img src="./src/public/images/product.jpg" alt="No se encuentra la imagen"></img></p>
             </div>
             <div class="product">
+                <div class="absolute">Modificar (Lapiz)</div>
                 <h3 class="product-title">Espejo 20x36cm</h3>
                 <p class="product-stock">Stock: <span>26</span> unidades</p>
                 <p class="product-price">Precio: $<span>300.50</span></p>
-                <p class="product-image">Se supone que soy una imagen</p>
+                <p class="product-image"><img src="./src/public/images/product.jpg" alt="No se encuentra la imagen"></img></p>
             </div>
             <div class="product">
+                <div class="absolute">Modificar (Lapiz)</div>
                 <h3 class="product-title">Espejo 20x36cm</h3>
                 <p class="product-stock">Stock: <span>26</span> unidades</p>
                 <p class="product-price">Precio: $<span>300.50</span></p>
-                <p class="product-image">Se supone que soy una imagen</p>
+                <p class="product-image"><img src="./src/public/images/product.jpg" alt="No se encuentra la imagen"></img></p>
             </div>
             <div class="product">
+                <div class="absolute">Modificar (Lapiz)</div>
                 <h3 class="product-title">Espejo 20x36cm</h3>
                 <p class="product-stock">Stock: <span>26</span> unidades</p>
                 <p class="product-price">Precio: $<span>300.50</span></p>
-                <p class="product-image">Se supone que soy una imagen</p>
+                <p class="product-image"><img src="./src/public/images/product.jpg" alt="No se encuentra la imagen"></img></p>
             </div>
         </nav>
         <!-- <h3 class="barcodeFont">0013</h3> -->
         allTransactions necesita responsive para mostrar los productos distinto
         index se deberia dividir en columnas
-        Hay un poco de responsive en la MAC, tomar ese código para mantener medidas y demás y usarlo de base
     </main>
 </body>
 </html>

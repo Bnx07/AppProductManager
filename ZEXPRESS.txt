@@ -1,0 +1,9 @@
+Desventajas de hacerlo con Express:
+	Mayor consumo
+	Tiempo gastado
+	
+Ventajas de hacerlo con Express:
+	Escalabilidad
+	Multer para imagenes
+	Prolijidad
+	
