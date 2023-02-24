@@ -3,14 +3,19 @@
   "version": "1.0.0",
   "description": "Aplicacion para control de stock y transacciones de locales",
   "main": "app.js",
-  "type": "commonjs",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "electron ."
+    
+    "start": "nodemon src2/app.js"
   },
   "author": "Bnx07v",
   "license": "ISC",
   "devDependencies": {
     "electron": "^22.0.0"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-handlebars": "^6.0.7"
   }
 }
