@@ -3,55 +3,59 @@ import fs from 'fs';
 export default class productManager {
     constructor() {
         console.log("ProductManager initialized");
-        this.path = "../../";
+        this.path = "./";
         
         if (!fs.existsSync(`${this.path}products.json`)) {
-            let objects = [{id: 0, category: "none", title: "none", price: 0, stock: 0}];
-    
-            objects = JSON.stringify(objects);
-            fs.writeFileSync(`${this.path}products.json`, objects);
+            fs.writeFileSync(`${this.path}products.json`, "[]");
         }
     }
 
     getAll = async() => {
-        return objects = await JSON.parse(fs.readFileSync(`${this.path}productos.json`, "utf-8"));
+        let products = await JSON.parse(fs.readFileSync(`${this.path}products.json`, "utf-8"));
+        return products
     }
 
     getOne = async(type, param) => {
-        let objects = await JSON.parse(fs.readFileSync(`${this.path}productos.json`, "utf-8"));
+        let products = await JSON.parse(fs.readFileSync(`${this.path}products.json`, "utf-8"));
+        let found = [];
 
-        let idToSearch = (element) => element.id === param;
+        let toSearch = (element) => element.id === param;
 
         switch (type) {
             case "title":
-                idToSearch = (element) => element.title === param;
+                toSearch = (element) => element.title === param;
                 break;
 
             case "id":
-                idToSearch = (element) => element.id === param;
+                param = parseInt(param);
+                toSearch = (element) => element.id === param;
                 break;
 
             case "category":
-                idToSearch = (element) => {
+                toSearch = (element) => {
                     if (element.category == param) {
-                        products.push(element);
+                        found.push(element);
                     }}
+                break;
         }
 
         if (type != "category") {
-            let position = await objects.findIndex(idToSearch);
+            let position = await products.findIndex(toSearch);
             if (position == -1) {
-                return 'Product not found';
+                return false;
             }
-            return objects[position];
+            return [products[position]];
         }
-    
-        let products = [];
-        objects.forEach(idToSearch);
+
+        products.forEach(toSearch);
+        if (found.length == 0) {
+            return false;
+        }
+        return found;
     }
 
-    createOne = async(object) => {
-        let objects = await JSON.parse(fs.readFileSync(`${this.path}productos.json`, "utf-8"));
+    createOne = async(product) => {
+        let objects = await JSON.parse(fs.readFileSync(`${this.path}products.json`, "utf-8"));
         let lastProduct = await objects.pop()
 
         objects.push(lastProduct);
@@ -60,33 +64,48 @@ export default class productManager {
         objects.push(product);
 
         objects = JSON.stringify(objects);
-        fs.writeFileSync(`${this.path}productos.json`, objects);
+        fs.writeFileSync(`${this.path}products.json`, objects);
         return "Product added";
     }
 
     editOne = async(product) => {
-        let objects = await JSON.parse(fs.readFileSync(`${this.path}productos.json`));
+        let objects = await JSON.parse(fs.readFileSync(`${this.path}products.json`));
 
-        let idToSearch = (element) => element.id === id;
+        let idToSearch = (element) => element.id === product.id;
         let position = await objects.findIndex(idToSearch);
         
         if (position === -1) {
             return 'Product not found';
-        } else {
-            let oldProduct = objects[position];
-
-            if (product.title) oldProduct.title = product.title;
-            if (product.price) oldProduct.price = product.price;
-            if (product.stock) oldProduct.stock = product.stock;
-            if (product.category) oldProduct.category = product.category;
-            if (product.thumbnail) oldProduct.thumbnail = product.thumbnail;
-
-            objects.splice(position, 1, product);
-
-            objects = JSON.stringify(objects);
-            fs.writeFileSync(`${this.path}productos.json`, objects);
-
-            return product;
         }
+
+        let oldProduct = objects[position];
+
+        if (product.title) {
+            console.log("Modified title")
+            oldProduct.title = product.title;
+        }
+        if (product.price) {
+            console.log("Modified price")
+            oldProduct.price = product.price;
+        }
+        if (product.stock) {
+            console.log("Modified stock")
+            oldProduct.stock = product.stock;
+        }
+        if (product.category) {
+            console.log("Modified category")
+            oldProduct.category = product.category;
+        }
+        if (product.thumbnail) {
+            console.log("Modified thumbnail")
+            oldProduct.thumbnail = product.thumbnail;
+        }
+
+        objects.splice(position, 1, oldProduct);
+
+        objects = JSON.stringify(objects);
+        fs.writeFileSync(`${this.path}products.json`, objects);
+
+        return product;
     }
 }

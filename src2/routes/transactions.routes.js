@@ -1,8 +1,8 @@
 import Router from 'express';
-import transactionManager from '../dao/fileManagers/transactionManager.js';
+// import transactionManager from '../dao/fileManagers/transactionManager.js';
 
 const router = Router();
-const tm = new transactionManager();
+// const tm = new transactionManager();
 
 router.get('/', (req, res) => {
 

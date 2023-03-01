@@ -85,8 +85,9 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 20%;
-    height: 40px;
+    width: 25%;
+    height: 36px;
+    font-size: 13.25px;
     background-color: var(--MY-orange);
     color: white;
     border-radius: 15px;
@@ -102,10 +103,12 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 20%;
-    height: 40px;
+    width: 25%;
+    height: 36px;
+    font-size: 13.25px;
     background-color: var(--MY-orange);
     color: white;
+    border: 2px solid var(--MY-brown-darker);
     border-radius: 15px;
     order: -1;
 }
@@ -116,6 +119,27 @@ main {
     align-items: center;
     gap: 10px;
     flex-wrap: wrap;
+}
+
+.button {
+    width: 60%;
+    height: 40px;
+    background-color: var(--MY-orange-light);
+    border: var(--MY-brown-dark) 2px solid;
+    border-radius: 25px;
+}
+
+.subbutton {
+    width: 40%;
+    height: 30px;
+    background-color: var(--MY-orange-light);
+    border: var(--MY-brown-dark) 2px solid;
+    border-radius: 25px;
+}
+
+.button:hover, .subbutton:hover {
+    background-color: var(--MY-orange-lighter);
+    transition: all ease 300ms;
 }
 
 /* ----------- RESPONSIVE ----------- */

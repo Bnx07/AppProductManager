@@ -1,0 +1,33 @@
+[
+    {"id": 1, "method": "Efectivo", "total": 1300.50, 
+    "products": [
+        {"title": "Espejo", "quantity": 3, "subtotal": 450, "discount": 0, "hasDiscount": false}, 
+        {"title": "Escritorio", "quantity": 1, "subtotal": 800, "discount": 10, "hasDiscount": true},
+        {"title": "Vela aromática", "quantity": 10, "subtotal": 300, "discount": 0, "hasDiscount": false}
+    ]},
+    {"id": 2, "method": "Efectivo", "total": 1300.50, 
+    "products": [
+        {"title": "Escritorio", "quantity": 3, "subtotal": 2640, "discount": 0, "hasDiscount": false}, 
+        {"title": "Espejo", "quantity": 1, "subtotal": 135, "discount": 10, "hasDiscount": true}
+    ]},
+    {"id": 3, "method": "Efectivo", "total": 1300.50, 
+    "products": [
+        {"title": "Escritorio", "quantity": 3, "subtotal": 2640, "discount": 0, "hasDiscount": false}, 
+        {"title": "Espejo", "quantity": 1, "subtotal": 135, "discount": 10, "hasDiscount": true}
+    ]},
+    {"id": 4, "method": "Efectivo", "total": 1300.50, 
+    "products": [
+        {"title": "Escritorio", "quantity": 3, "subtotal": 2640, "discount": 0, "hasDiscount": false}, 
+        {"title": "Espejo", "quantity": 1, "subtotal": 135, "discount": 10, "hasDiscount": true}
+    ]},
+    {"id": 5, "method": "Efectivo", "total": 1300.50, 
+    "products": [
+        {"title": "Escritorio", "quantity": 3, "subtotal": 2640, "discount": 0, "hasDiscount": false}, 
+        {"title": "Espejo", "quantity": 1, "subtotal": 135, "discount": 10, "hasDiscount": true}
+    ]},
+    {"id": 6, "method": "Efectivo", "total": 1300.50, 
+    "products": [
+        {"title": "Escritorio", "quantity": 3, "subtotal": 2640, "discount": 0, "hasDiscount": false}, 
+        {"title": "Espejo", "quantity": 1, "subtotal": 135, "discount": 10, "hasDiscount": true}
+    ]}
+]

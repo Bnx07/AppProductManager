@@ -1,0 +1,35 @@
+<link rel="stylesheet" href="/css/newProduct.css">
+<header>
+    <a class="return" onclick="window.close()" href="/">&lt Volver</a>
+    <a class="header-link" onclick="window.close()" href="/allTransactions/">Lista de compras</a>
+    <a class="header-link" onclick="window.close()" href="/newTransaction/">Realizar compra</a>
+</header>
+<main>
+    <h1 class="title">Nuevo producto</h1>
+    <form id="form">
+        <div class="image">
+            <p class="imageText">Arrastra una imagen del producto</p>
+        </div>
+        <div class="block">
+            <h3>Nombre del producto</h3>
+            <input type="text" name="title" class="formInput" placeholder="Nombre del producto">
+        </div>
+        <div class="block">
+            <h3>Propiedades</h3>
+            <div class="group">
+                <p class="formIndicator">Categoría: </p>
+                <input type="text" name="category" class="formInput" placeholder="Categoría del producto">
+            </div>
+            <div class="group">
+                <p class="formIndicator">Precio: </p>
+                <input type="number" name="price" class="formInput" placeholder="Precio del producto">
+            </div>
+            <div class="group">
+                <p class="formIndicator">Stock: </p>
+                <input type="number" name="stock" class="formInput" placeholder="Stock">
+            </div>
+        </div>
+        <button type="submit" class="button">Agregar producto</button>
+    </form>
+</main>
+<script src="/js/newProduct.js"></script>

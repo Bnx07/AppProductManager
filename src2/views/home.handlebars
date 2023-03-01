@@ -1,0 +1,54 @@
+<link rel="stylesheet" href="css/index.css">
+<header>
+    {{!-- <a class="header-link" href="/newTransaction">Tomar mate</a> --}}
+    <a class="header-link" target="_blank" href="/newProduct">Añadir producto</a>
+    <a class="header-link" href="/allTransactions">Lista de compras</a>
+    <a class="header-link" href="/newTransaction">Realizar compra</a>
+</header>
+<main>
+    <nav id="searchProduct">                                                        <!--QUIERO QUE SE ADHIERA AL HEADER-->
+        {{#if isFilter}}
+          <button class="subbutton cancel"><a href="/">Cancelar</a></button>
+        {{/if}}
+        <input type="text" id="searchInput" placeholder="Ingrese un dato">
+        <div class="group">
+            <p>Buscar por:</p>
+            <div class="dropdown">
+                <button class="dropbtn">Opciones</button>
+                <div class="dropdown-content">
+                    <button class="dropdown-item" onclick="searchProductsBy('title')">Nombre</button>
+                    <button class="dropdown-item" onclick="searchProductsBy('id')">ID</button>
+                    <button class="dropdown-item" onclick="searchProductsBy('category')">Categoría</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <nav id="randomProducts">
+      
+      <!-- <h6>Products.random(6)</h6> -->
+      {{#if invalid}}
+        <div class="product">
+          <h3>No se encuentran resultados</h3>
+        </div>
+      {{else}}
+        {{#each products}}
+          <div class="product">
+            <a class="absolute" href='/editProduct/{{id}}' target="_blank"><img src="/images/editar.png" onclick="editProduct(2)"></a>
+            <h3 class="product-title">{{title}}</h3>
+            <p class="product-stock">Stock: <span>{{stock}}</span> unidades</p>
+            <p class="product-price">Precio: $<span>{{price}}</span></p>
+            <p class="product-image"><img src="/images/product.jpg" alt="No se encuentra la imagen"></img></p>
+          </div>
+        {{/each}}
+      {{/if}}
+    </nav>
+    <!-- <h6>Products.random(6)</h6> -->
+    <!-- <h3 class="barcodeFont">0013</h3> -->
+    <h3>Hacer algo con los fondos en blanco en las resoluciones grandes<br></h3>
+    <h3>Home funcional, limitar productos sin parámetros y modificar tema de tamaño<br></h3>
+    <h3>allTransactions funcional<br></h3>
+    <h3>newTransaction hacer que guarde en sessionStorage<br></h3>
+    <h3>newProduct funcional, hacer uso de imagenes, mejorar respuestas y tratar de hacer category como lista de la que seleccionar<br></h3>
+    <h3>editProduct funcional, hacer que use imagenes y mejorar respuestas<br></h3>
+</main>
+<script src="/js/home.js"></script>

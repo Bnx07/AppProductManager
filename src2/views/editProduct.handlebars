@@ -1,0 +1,43 @@
+<link rel="stylesheet" href="/css/editProduct.css">
+<header>
+    <a class="header-link" onclick="window.close()" href="/newProduct">Añadir producto</a>
+    <a class="return" onclick="window.close()" href="/">&lt Volver</a>
+    <a class="header-link" onclick="window.close()" href="/allTransactions">Lista de compras</a>
+</header>
+<main>
+    <h1>Modificar producto</h1>
+    <form id="dataZone">
+        <div class="block">
+            <div class="group">
+                <h3>ID del producto: <span id="pid">{{product.id}}</span></h3> <!--TRAE AL PRODUCTO CON ESE ID EN DATAZONE-->
+            </div>
+        </div>
+        <div class="image">
+            <p class="imageText">Arrastra una imagen del producto</p>
+        </div>
+        <div class="block">
+            <div class="group">
+                <div class="datoAnt"><span>Nombre:</span> {{product.title}}</div>
+                <input type="text" class="newValue" name="title" placeholder="Nuevo nombre">
+                <div></div>
+            </div>
+            <div class="group">
+                <div class="datoAnt"><span>Precio:</span> {{product.price}}</div>
+                <input type="text" class="newValue" name="price" placeholder="Nuevo precio">
+                <div></div>
+            </div>
+            <div class="group">
+                <div class="datoAnt"><span>Stock:</span> {{product.stock}}</div>
+                <input type="text" class="newValue" name="stock" placeholder="Nuevo stock">
+                <div></div>
+            </div>
+            <div class="group">
+                <div class="datoAnt"><span>Categoría:</span> {{product.category}}</div>
+                <input type="text" class="newValue" name="category" placeholder="Nueva categoría">
+                <div></div>
+            </div>
+        </div>
+        <button type="submit" class="button">Guardar cambios</button>
+    </form>
+</main>
+<script src="/js/editProduct.js"></script>

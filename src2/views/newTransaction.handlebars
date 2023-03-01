@@ -1,0 +1,38 @@
+<link rel="stylesheet" href="/css/newTransaction.css">
+<header>
+    <a class="header-link" target="_blank" href="/newProduct/">Añadir producto</a>
+    <a class="return" href="/">&lt Volver</a>
+    <a class="header-link" href="/allTransactions/">Lista de compras</a>
+</header>
+<main>
+    <h1>Nueva transaccion</h1>
+    <section id="form">
+        <div class="block">
+            <h3>Método de pago</h3>
+            <select id="methods">
+                <option value="selecciona">Selecciona un método de pago</option>
+                <option value="Efectivo">Efectivo</option>
+                <option value="Tarjeta de crédito">Tarjeta de crédito</option>
+                <option value="Tarjeta de débito">Tarjeta de débito</option>
+                <option value="Transferencia">Transferencia</option>
+                <option value="Cheque">Cheque</option>
+            </select>
+        </div>
+        <div class="block">
+            <h3>Productos</h3>
+            <div id="products">
+                <div class="product">
+                    <p class="productTitle">ID</p>
+                    <input type="number" class="productInput" placeholder="ID">
+                    <p class="productTitle">Cant</p>
+                    <input type="number" class="productInput" placeholder="Cant">
+                    <p class="productTitle">Dto</p>
+                    <input type="number" class="productInput" placeholder="10%">
+                </div>
+            </div>
+            <button class="subbutton" onclick="addProductSpace()">Añadir producto</button>
+        </div>
+        <button class="button" onclick="addTransaction()">Completar transaccion</button>
+    </section>
+</main>
+<script src="/js/frontEnd.js"></script>

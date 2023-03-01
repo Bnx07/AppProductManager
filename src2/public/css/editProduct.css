@@ -1,0 +1,101 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#dataZone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    background-color: var(--MY-orange-lightest);
+    padding: 10px;
+    border: 3px solid var(--MY-orange-light);
+    border-radius: 25px;
+    margin-bottom: 10px;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 3px dashed var(--MY-green-light);
+    border-radius: 25px;
+}
+
+.group {
+    width: 100%;
+}
+
+.input {
+    width: 50px;
+    height: 30px;
+    padding: 0 10px;
+    border: 2px solid gray;
+    border-radius: 25px;
+    margin-bottom: 5px;
+}
+
+.newValue, .newTag {
+    width: 150px;
+    height: 30px;
+    padding: 0 10px;
+    border: 2px solid gray;
+    border-radius: 25px;
+    margin-bottom: 5px;
+}
+
+.datoAnt, .tagAnt {
+    width: 200px
+}
+
+.image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 95%;
+    height: 200px;
+    border: 3px dashed var(--MY-green-light);
+    border-radius: 25px;
+}
+
+.imageText {
+    width: 200px;
+    opacity: 60%;
+    text-align: center;
+}
+
+@media (min-width: 768px) and (max-width: 1365px) {
+    #dataZone {
+        width: 60%;
+    }
+
+    .group * {
+        width: 200px;
+    }
+
+    .group {
+        justify-content: space-around;
+    }
+}
+
+@media (min-width: 1366px) and (max-width: 1920px) {
+    #dataZone {
+        width: 40%;
+    }
+    
+    .group * {
+        width: 200px;
+    }
+
+    .group {
+        justify-content: space-around;
+    }
+}

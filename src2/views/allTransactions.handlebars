@@ -1,0 +1,29 @@
+<link rel="stylesheet" href="/css/allTransactions.css">
+<header>
+    <a class="header-link" target="_blank" href="/newProduct/">Añadir producto</a>
+    <a class="return" href="/">&lt Volver</a>
+    <a class="header-link" href="/newTransaction/">Realizar compra</a>
+</header>
+<main>
+    <h1 class="mainTitle">Últimas transacciones</h1>
+
+    <section id="showAllTransactions">
+        {{#each transactions}}
+            <div class="showTransaction">
+                <h1 class="showTransaction-title">Compra numero: {{id}}</h1>
+                <h3 class="showTransaction-method">Método de pago: {{method}}</h3>
+                <h3 class="showTransaction-total">Monto total: ${{total}}</h3>
+                <div class="showTransaction-products">
+                    <h3 class="showTransaction-products-title">Lista de productos</h3>
+                    {{#each products}}
+                        <div class="showTransaction-products-item">
+                            <p class="item-quantity">{{quantity}}</p>
+                            <p class="item-name">{{title}}</p>
+                            <p class="item-subtotal">${{subtotal}} {{#if hasDiscount}} -({{discount}}%) {{/if}}</p>
+                        </div>
+                    {{/each}}
+                </div>
+            </div>
+        {{/each}}
+    </section>
+</main>

@@ -46,10 +46,6 @@ main {
     border-radius: 25px;
 }
 
-.group {
-    width: 100%;
-}
-
 .formIndicator {
     width: 100px;
 }
@@ -65,24 +61,6 @@ main {
 
 .button {
     margin-top: 10px;
-    width: 60%;
-    height: 40px;
-    background-color: var(--MY-orange-light);
-    border: var(--MY-brown-dark) 2px solid;
-    border-radius: 25px;
-}
-
-.button:hover, .subbutton:hover {
-    background-color: var(--MY-orange-lighter);
-    transition: all ease 300ms;
-}
-
-.subbutton {
-    width: 40%;
-    height: 30px;
-    background-color: var(--MY-orange-light);
-    border: var(--MY-brown-dark) 2px solid;
-    border-radius: 25px;
 }
 
 #tags {
@@ -92,9 +70,13 @@ main {
 }
 
 @media (min-width: 768px) and (max-width: 1365px) {
-    
+    #form {
+        width: 60%;
+    }
 }
 
 @media (min-width: 1366px) and (max-width: 1920px) {
-    
+    #form {
+        width: 40%;
+    }
 }
